@@ -83,5 +83,8 @@
       document.querySelectorAll( 'oembed[url]' ).forEach( element => {
           iframely.load( element, element.attributes.url.value );
       } );
+      document.querySelectorAll( 'img' ).forEach( element => {
+        element.classList.add("img-fluid");
+      } );
     </script>
 @endsection
